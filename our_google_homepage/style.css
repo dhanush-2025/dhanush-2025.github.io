@@ -1,0 +1,56 @@
+        #search
+        {
+            text-align: center;
+        }
+        #top-right
+        {
+            text-align: right;
+        }
+        #search
+        {
+            position: absolute;
+            top:30%;
+            bottom: 50%;
+            right: 0%;
+            left: 0%;
+            margin: auto;
+        }
+
+        #type
+        {
+            width: 30%;
+            border-radius: 45px;
+            border-width: 2px;
+            font-size: 20pt;
+            margin: 20px;
+            padding: 5px 5px;
+            padding-top: 7px;
+            padding-left: 50px;
+            background-color: white;
+            background-repeat: no-repeat;
+            outline: none;
+        }
+        #click
+        {
+            padding: 5px;
+            border-radius: 10px 10px 10px 10px;
+            cursor: pointer;
+            display: inline-block;
+            box-shadow: 0 1px grey;
+            opacity: 0.8;
+        }
+
+        #click:hover
+        {
+            opacity: 1.5;
+        }
+        #ending{
+            font-size: 14pt;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 100px;
+            text-align-last: center ;
+            color: black;
+        }
+        

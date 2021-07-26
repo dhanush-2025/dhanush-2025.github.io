@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+        #top-right
+        {
+            text-align: right;
+        }
+
+        .aif 
+        {
+            margin: 5px;
+            font-size: 18pt;
+            color: black;
+            border: solid black 0.2px;
+            text-decoration: none;
+            padding: 4px;
+        }
+        .aif:hover
+        {
+            background-color: whitesmoke;
+            text-decoration: underline;
+        }
+        #type-box
+        {
+            width: 40%;
+            border-radius: 0 0 0 0;
+            outline: none;
+            margin: 10px;
+            font-size: 14;
+            padding: 5px;
+        }
+        #type-box-num
+        {
+            width: 20%;
+            border-radius: 0 0 0 0;
+            outline: none;
+            margin: 10px;
+            font-size: 14;
+            padding: 5px;
+
+        }
+        .main-form label,
+        .main-form input
+        {
+            display: block;
+        }
+        .main-form input
+        {
+            display: block-inline;
+        }
+        #line
+        {
+            width: 80%;
+            border-bottom: 1px solid grey;
+            position: absolute;
+        }
+        #clicked
+        {
+            width: 13%;
+            height: 32px;
+            font-size: 10pt;
+            background-color: dodgerblue;
+            color: whitesmoke;
+            border-radius: 10px 10px 10px 10px;
+            cursor: pointer;
+        }
+        #clicked:hover
+        {
+            background-color: royalblue;
+            color: whitesmoke;
+        }
+        #contact
+        {
+            text-decoration: none;
+            font-size: 16pt;
+            font-family: "Times New Roman";
+            color: dodgerblue;
+        }
+        #contact:hover
+        {
+            text-decoration: underline;
+            color: royalblue;
+
+        }
+        body
+        {
+            background-image: url('bg5.jpeg');
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="top-right">
+            <a class="aif" href="search.html">Google search</a>
+            <a class="aif" href="image search.html">Image search</a>
+        </div>
+        <div> 
+            <div style="margin-bottom: 35px;"><label style="color: red; font-size: 18pt;"><a style="font-size: 18pt;color: red; text-decoration: none;" href="advanced search.html">Advanced Search..</a></label></div>
+            <div style="margin-left:20px;">
+                <div id="line"></div><br></br>
+                <form action="https://google.com/search" class="main-form">
+                    <div style="margin-bottom:20px; font-size: 14pt;">
+                        <span><b>Find pages with...</b></span>
+                    </div>
+
+                    <div>
+                        <label for="as_q">all these words:</label>
+                        <input type="text" name="as_q" autocomplete="off" id="type-box" align="middle">
+                    </div>
+
+                    <div>
+                        <label for="as_epq">this exact word or phrase:</label>
+                        <input type="text" name="as_epq" autocomplete="off" id="type-box" align="middle">
+                    </div>
+    
+                    <div>
+                        <label for="as_oq">any of these words:</label>
+                        <input type="text" name="as_oq" autocomplete="off" id="type-box">
+                    </div>
+
+                     <div>
+                        <label for="as_eq">none of these words:</label>
+                        <input type="text" name="as_eq" autocomplete="off" id="type-box">
+                    </div>
+
+                     <div>
+                        <label for="as_nlo">numbers ranging from:</label>
+                        <input type="number" name="as_nlo" autocomplete="off" id="type-box-num">
+                        <label for="as_nhi">to</label>
+                        <input type="number" name="as_nhi" autocomplete="off" id="type-box-num">
+                    </div><br></br>
+
+                    <div id="line"></div><br></br>
+                    <div style="padding-left: 35%;"><input type="submit" value="Advanced Search" id="clicked"></div>
+
+
+                </form>
+            </div> 
+            <div>
+            <table>
+                <tr>
+                    <td><b><i>Our details :</i></b></td>
+                </tr>
+                <tr>
+                    <td><a id="contact" href="index.html"><b>Dhanush Kommula</b></a></td>
+                </tr>
+                <tr>
+                    <td><a id="contact" href="arya.html"><b>Arya Burela</b></a></td>
+                </tr>
+                
+            </table>
+        </div>   
+    </body>
+</html>

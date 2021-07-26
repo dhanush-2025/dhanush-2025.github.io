@@ -1,0 +1,60 @@
+html
+{
+  scroll-behavior: smooth ;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+}
+#top
+{
+  font-size: 32pt;
+  position: sticky;
+  width: 100%;
+  text-align: center;
+}
+#image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+#ending
+{
+  font-size: 14pt;
+  position: static;
+  bottom: 2px;
+  width: 100%;
+  text-align-last: center;
+  color: dimgray;
+}
+#bio
+{
+  font-size: 14pt;
+  width: 150%;
+  height: 220px;
+
+}
+a
+{
+  text-decoration: none;
+  color: grey;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+#side
+{
+
+  font-size: 18pt;
+  width: 80%;
+  float: left;
+
+}
+
+
+

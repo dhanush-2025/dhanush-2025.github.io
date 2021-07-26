@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            #type
+            {
+                background-image: url('searchicon.png');
+                background-size: 35px 40px; 
+                background-position: 5px 0.2px;
+            }
+            #button
+            {
+                border-radius: 100%;
+                font-size: 16pt;
+                background-color: aliceblue;
+                color: red;
+                padding: 5px 10px 5px 10px;
+                cursor: pointer;
+            }
+            body
+            {
+                background-image: url('bg4.jpeg');
+            }
+            #contact
+            {
+                text-decoration: none;
+                font-size: 16pt;
+                font-family: "Times New Roman";
+                color: oldlace;
+            }
+            #contact:hover
+            {
+                text-decoration: underline;
+            }
+            .aif
+            {
+                margin: 5px;
+                font-size: 18pt;
+                background-color: oldlace;
+                color: black;
+                border: solid black 0.2px;
+                text-decoration: none;
+                padding: 4px;
+            }
+            .aif:hover
+            {
+                background-color: whitesmoke;
+                text-decoration: underline;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="top-right">
+            <a class="aif" href="advanced search.html">Advanced search</a>
+            <a class="aif" href="image search.html">Image search</a>
+        </div>
+        <p>
+            <a style="font-size: 18pt; color: oldlace; text-decoration: none;" href="search.html">
+                <b>Google Search...</b>
+            </a>
+        </p>
+        <div id="search">
+            <div>
+                <img src="google.png" alt="Google Images" height="100px" width="400px">
+                <a href="game.html"><button id="button">Play</button></a>
+            </div>
+            <form action="https://google.com/search">
+                <div id="box">
+                    <input type="text" name="q" autofocus autocomplete="off" placeholder="Search Google" id="type">
+                </div>
+                <div>
+                    <input type="submit" value="Google Search" id="click">
+                </div>
+            </form>
+        </div>
+        <div id="ending">
+            <table id="ending">
+                <tr>
+                    <td>
+                        <b><i>Our details :</i></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a id="contact" href="index.html"><b>Dhanush Kommula</b></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a id="contact" href="arya.html"><b>Arya Burela</b></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
