@@ -1,64 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon" href="pic2.jpg" type="image/x-icon">
-        <title>Dhanush Kommula</title>
+        <title>Search</title>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            #type
+            {
+                background-image: url('searchicon.png');
+                background-size: 35px 40px; 
+                background-position: 5px 0.2px;
+            }
+            #button
+            {
+                border-radius: 100%;
+                font-size: 16pt;
+                background-color: aliceblue;
+                color: red;
+                padding: 5px 10px 5px 10px;
+                cursor: pointer;
+            }
+            body
+            {
+                background-image: url('bg4.jpeg');
+            }
+            #contact
+            {
+                text-decoration: none;
+                font-size: 16pt;
+                font-family: "Times New Roman";
+                color: oldlace;
+            }
+            #contact:hover
+            {
+                text-decoration: underline;
+            }
+            .aif
+            {
+                margin: 5px;
+                font-size: 18pt;
+                background-color: oldlace;
+                color: black;
+                border: solid black 0.2px;
+                text-decoration: none;
+                padding: 4px;
+            }
+            .aif:hover
+            {
+                background-color: whitesmoke;
+                text-decoration: underline;
+            }
+
+
+        </style>
     </head>
-    <body >
-        <p>
-            <div>
-                <a href="search.html" style="color: whitesmoke; font-size: 18pt;" >← Back to search</a>
-            </div>
-            <div id="top">
-                You are on Dhanush's website
-            </div>
-        </p>
-        <div id="image">
-            <img src="pic1.jpg" alt="Photo" width="80%" height="90%">
-                <table id="bio">
-                    <tr>
-                        <td><b>NAME</b> : KOMMULA SAI VENKATA DHANUSH</td>
-                    </tr>
-                    <tr>
-                        <td><b>FATHER NAME</b> : KOMMULA JAYA PRASAD</td>
-                    </tr><tr>
-                        <td><b>MOTHER NAME</b> : KOMMULA JAGADEESWARI</td>
-                    </tr><tr>
-                        <td><b>DOB</b> : 18th october 2002</td>
-                    </tr><tr>
-                        <td><b>COLLEGE</b> : BITS Pilani, Pilani Campus</td>
-                    </tr><tr>
-                        <td><b>COURSE</b> : M.Sc Chemistry</td>
-                    </tr>
-            
-                </table>
-
+    <body>
+        <div id="top-right">
+            <a class="aif" href="advanced search.html">Advanced search</a>
+            <a class="aif" href="image search.html">Image search</a>
         </div>
-
-            <div id="ending">
-                <table align="center">
-                    <tr>
-                        <td>Contact:</td>
-                    </tr>
-                </table>
-                <table id="ending">
-                    <tr>
-                        <td>ph.no: 9391133949</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="mailto: dhanushkommula@gmail.com" class="Contact">email</a>
-                            <a href="https://www.instagram.com/dhanush_kommula/" class="Contact">Instagram</a>
-                        </td>
-                    </tr>
-                    <p align="center" id="links">
-                
-                <a href="https://www.linkedin.com/in/k-s-v-dhanush-189099206/" target="_blank"><img height="30" src="https://raw.githubusercontent.com/sushant-varanasi/sushant-varanasi/5e6a3df198e3453e0564d19299f580d326246f2c/icon/linkedin.svg"></a>&nbsp;&nbsp;
-                <a href = "mailto: dhanushkommula@gmail.com, f20200709@pilani.bits-pilani.ac.in" target="_blank"><img height="30" src="https://raw.githubusercontent.com/sushant-varanasi/sushant-varanasi/5e6a3df198e3453e0564d19299f580d326246f2c/icon/gmail.svg"></a>&nbsp;&nbsp;
-        </p>   
-                </table>
+        <p>
+            <a style="font-size: 18pt; color: oldlace; text-decoration: none;" href="index.html">
+                <b>Google Search...</b>
+            </a>
+        </p>
+        <div id="search">
+            <div>
+                <img src="google.png" alt="Google Images" height="100px" width="400px">
+                <a href="game.html"><button id="button">Play</button></a>
+            </div>
+            <form action="https://google.com/search">
+                <div id="box">
+                    <input type="text" name="q" autofocus autocomplete="off" placeholder="Search Google" id="type">
+                </div>
+                <div>
+                    <input type="submit" value="Google Search" id="click">
+                </div>
+            </form>
+        </div>
+        <div id="ending">
+            <table id="ending">
+                <tr>
+                    <td>
+                        <b><i>Our details :</i></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a id="contact" href="dhanush.html"><b>Dhanush Kommula</b></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a id="contact" href="arya.html"><b>Arya Burela</b></a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
