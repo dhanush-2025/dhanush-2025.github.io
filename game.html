@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>game</title>
+        <title>Count</title>
+        <style>
+        #counter
+        {
+            background-color: silver;
+            color: white;
+            text-align: center;
+            font-size: 100pt;
+        }
+        #button
+        {
+            position: absolute;
+            bottom: 50%;
+            left: 47%;
+            font-size: 23pt;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: darkgrey ;
+        }
+        </style>
+        <script>
+            let counter = 0;
+            function count() {
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+    
+                if (counter % 10 === 0) {
+                    alert(`thanks for counting upto ${counter}`)
+                }
+            }
+        </script>
     </head>
-
+    <body>
+        <h1 id="counter">0</h1>
+        <button id="button" onclick="count()">Count</button>
+    </body>
+</html>
